@@ -118,8 +118,7 @@ body {
 
 .navigation__item__link:has(.navigation__item__profile__icon):hover
   .navigation__item__profile__icon {
-  background: url(../../img/icons/icon-profile-hover.svg) center center
-    no-repeat;
+  background: url(../img/icons/icon-profile-hover.svg) center center no-repeat;
   background-size: 24px 24px;
 }
 
@@ -127,7 +126,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url(../../img/icons/icon-profile.svg) center center no-repeat;
+  background: url(../img/icons/icon-profile.svg) center center no-repeat;
   background-size: 24px 24px;
 }
 
@@ -135,7 +134,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background: url(../../img/icons/icon-burguer-menu.svg) center center no-repeat;
+  background: url(../img/icons/icon-burguer-menu.svg) center center no-repeat;
   background-size: 24px 24px;
 }
 
