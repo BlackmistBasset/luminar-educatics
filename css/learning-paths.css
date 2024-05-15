@@ -224,8 +224,11 @@ h3 {
 }
 
 .intro-desc {
+  /* font-weight: 400;
+  font-size: 1vw;
+  color: #FFF; */
   -webkit-box-flex: 1;
-  color: #FFF;
+  color: #FFF;  
   font-size: 1vw;
   flex-grow: 1;
   flex-shrink: 1;
@@ -233,10 +236,9 @@ h3 {
   padding: 2.4rem;
 }
 
-.intro-body {
-border-radius: 0.2rem;
-}
-
-.intro-title {
-  display: flex;
+.intro-img {
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 0; 
+  height: 0;
 }
