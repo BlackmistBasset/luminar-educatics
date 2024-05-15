@@ -201,3 +201,42 @@ body {
   align-items: center;
   flex-wrap: wrap; 
 }
+
+/* S E L E C T O R P O R E T I Q U E T A */
+h2 {
+  color: #FFF;
+  font-size: 2vw;    
+}
+
+h3 {
+  color: #FFF;
+  font-size: 1vw;    
+}
+
+.intro-container {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 120rem;
+  width: calc(100% - 2 * 30.2rem);
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  container-type: inline-size;
+}
+
+.intro-desc {
+  -webkit-box-flex: 1;
+  color: #FFF;
+  font-size: 1vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 75%;
+  padding: 2.4rem;
+}
+
+.intro-body {
+border-radius: 0.2rem;
+}
+
+.intro-title {
+  display: flex;
+}
