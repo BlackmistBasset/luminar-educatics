@@ -221,6 +221,7 @@ h3 {
   margin-inline-start: auto;
   margin-inline-end: auto;
   container-type: inline-size;
+  /* border: 1px solid #000; */
 }
 
 .intro-desc {
