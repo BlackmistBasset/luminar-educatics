@@ -242,3 +242,23 @@ h3 {
   padding-top: 0; 
   height: 0;
 }
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h2{
+      font-size: 3vw;
+  }
+  #introsegment{
+      height: 400px;
+  }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+  h2{
+      font-size: 3vw;
+  }
+  #introsegment{
+      height: 300px;
+  }
+}
