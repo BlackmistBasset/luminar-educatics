@@ -46,6 +46,11 @@ body {
   }
 }
 
+.en__construccion {
+  text-align: center;
+  color: var(--secondary-color);
+}
+
 /* H E A D E R  */
 
 .header__container {

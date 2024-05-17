@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/home.css" />
     <title>Luminar EducaTICs Home</title>
   </head>
-  <body>
+  <body class="home">
     <header class="header__container">
       <a href="./index.html" class="header__logo__link">
         <img
@@ -35,11 +35,7 @@
               >Autoevaluación</a
             >
           </li>
-          <li class="navigation__item">
-            <a href="./contacto.html" class="navigation__item__link"
-              >Contacto</a
-            >
-          </li>
+
           <li class="navigation__item">
             <a href="./login.html" class="navigation__item__link"
               ><span class="navigation__item__profile__icon"></span
@@ -108,6 +104,70 @@
           </div>
         </diiv>
       </section>
+      <section class="section__contact">
+        <h2 class="section__contact__title">
+          ¿Interesado en recibir más información?
+        </h2>
+        <h3 class="section__contact__subtitle">
+          Brindamos asesoría personalizada. No dudes en escribirnos:
+        </h3>
+
+        <form class="section__contact__form" id="contact_form">
+          <div class="input__container">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ej: Juan"
+            />
+          </div>
+          <div class="input__container">
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Ej: Pérez"
+            />
+          </div>
+
+          <div class="input__container">
+            <label for="telefono">Teléfono</label>
+            <input
+              type="number"
+              id="telefono"
+              name="telefono"
+              placeholder="Ej: 12-3456-7890"
+            />
+          </div>
+
+          <div class="input__container">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ej: juan.perez@gmail.com"
+            />
+          </div>
+          <div class="input__container">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              placeholder="Ej: Hola! Estoy interesado en recibir más información de los cursos"
+            ></textarea>
+          </div>
+
+          <input
+            type="submit"
+            value="Enviar"
+            id="Enviar"
+            class="contact__form__submit"
+          />
+        </form>
+      </section>
     </main>
     <footer class="footer__container">
       <!-- <img src="./img/logo-blanco.png" alt="Footer Logo" class="footer__logo" /> -->
@@ -129,11 +189,6 @@
           <li class="navigation__item">
             <a href="./autoevaluacion.html" class="navigation__item__link"
               >Autoevaluación</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="./contacto.html" class="navigation__item__link"
-              >Contacto</a
             >
           </li>
         </ul>

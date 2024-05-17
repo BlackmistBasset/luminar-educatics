@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/autoevaluacion.css" />
     <title>Luminar EducaTICs Home</title>
   </head>
@@ -34,11 +35,7 @@
               >Autoevaluación</a
             >
           </li>
-          <li class="navigation__item">
-            <a href="./contacto.html" class="navigation__item__link"
-              >Contacto</a
-            >
-          </li>
+
           <li class="navigation__item">
             <a href="./login.html" class="navigation__item__link"
               ><span class="navigation__item__profile__icon"></span
@@ -50,464 +47,561 @@
     </header>
     <main class="main__container">
       <!-- BIENVENIDA -->
-      <br>
+      <br />
       <div>
         <h1>Te damos la bienvenida a nuestra Nivelación Express</h1>
       </div>
-      <br>
+      <br />
       <!-- INFORMACION PERSONAL -->
-      <form  action="" method="get" id="formContactData">
+      <form action="" method="get" id="formContactData">
         <div>
-          <h2>Proporciona tu información de contacto antes de completar nuestra nivelación.</h2>
+          <h2>
+            Proporciona tu información de contacto antes de completar nuestra
+            nivelación.
+          </h2>
         </div>
-        <br>
-        <section class="containerContacData" id="contactData" >
+        <br />
+        <section class="containerContacData" id="contactData">
           <div>
-            <label for="country" class="forminator-required">País de residencia: </label>
+            <label for="country" class="forminator-required"
+              >País de residencia:
+            </label>
             <select name="country" id="country" required>
-              <option value=""selected>Seleccione</option>
-                <option value="AR">Argentina</option>
-                <option value="UR">Uruguay</option>
-                <option value="BR">Brasil</option>
-                <option value="BO">Bolivia</option>
-                <option value="CH">Chile</option>
-                <option value="PE">Perú</option>
-                <option value="EC">Ecuador</option>
-                <option value="CO">Colombia</option>
-                <option value="VE">Venezuela</option>
-            </select><span>*</span>
+              <option value="" selected>Seleccione</option>
+              <option value="AR">Argentina</option>
+              <option value="UR">Uruguay</option>
+              <option value="BR">Brasil</option>
+              <option value="BO">Bolivia</option>
+              <option value="CH">Chile</option>
+              <option value="PE">Perú</option>
+              <option value="EC">Ecuador</option>
+              <option value="CO">Colombia</option>
+              <option value="VE">Venezuela</option></select
+            ><span>*</span>
           </div>
-          <br><br>
+          <br /><br />
           <div>
             <label for="firstname" class="forminator-required">Nombre: </label>
-            <input type="text" name="firstname" id="firstname" maxlength="12" required placeholder="Ej.: Pedro"><span>*</span>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              maxlength="12"
+              required
+              placeholder="Ej.: Pedro"
+            /><span>*</span>
           </div>
-          <br><br>
+          <br /><br />
           <div>
             <label for="lastname" class="forminator-required">Apellido: </label>
-            <input type="text" name="lastname" id="lastname" maxlength="12" required placeholder="Ej.: Perez"><span>*</span>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              maxlength="12"
+              required
+              placeholder="Ej.: Perez"
+            /><span>*</span>
           </div>
-          <br><br>
+          <br /><br />
           <div>
-            <label for="email" class="forminator-required">Correo electrónico: </label>
-            <input type="email" name="email" id="email" required placeholder="Ej.: pedrope@gmail.com"><span>*</span>
+            <label for="email" class="forminator-required"
+              >Correo electrónico:
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Ej.: pedrope@gmail.com"
+            /><span>*</span>
           </div>
-          <br><br>
+          <br /><br />
           <div>
-            <label for="cellPhone" class="forminator-required">Teléfono: </span></label>
-            <input type="number" name="cellPhone" placeholder="Ej.: 11 5555 6666" autocomplete="off">
+            <label for="cellPhone" class="forminator-required">Teléfono:</label>
+            <input
+              type="number"
+              name="cellPhone"
+              placeholder="Ej.: 11 5555 6666"
+              autocomplete="off"
+            />
             <div>
-              <span class="forminator-description">Por favor, ingrese su número sin +54 9</span>
+              <span class="forminator-description"
+                >Por favor, ingrese su número sin +54 9</span
+              >
             </div>
           </div>
-          <br><br>
+          <br /><br />
         </section>
-        <br>
+        <br />
         <!-- ADVERTENCIA -->
         <div>
           <h2>¡Ten en cuenta que hay una sola opción correcta por pregunta!</h2>
         </div>
-        <br>
+        <br />
         <!-- PREGUNTAS -->
-      <!-- <form action="" method="get" id="questions"> -->
+        <!-- <form action="" method="get" id="questions"> -->
         <ul>
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>1. ¿Cuál de los siguientes NO es un lenguaje de programación utilizado comúnmente en el desarrollo Full Stack Python?</h3>
+                <h3>
+                  1. ¿Cuál de los siguientes NO es un lenguaje de programación
+                  utilizado comúnmente en el desarrollo Full Stack Python?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">HTML</option>
-                    <option value="2">Java</option>
-                    <option value="3">JavaScript</option>
-                    <option value="4">Python</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">HTML</option>
+                  <option value="2">Java</option>
+                  <option value="3">JavaScript</option>
+                  <option value="4">Python</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>2. ¿Cuál de los siguientes frameworks es más utilizado en el desarrollo Full Stack Python?</h3>
+                <h3>
+                  2. ¿Cuál de los siguientes frameworks es más utilizado en el
+                  desarrollo Full Stack Python?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">Flask</option>
-                    <option value="2">Ruby on Rails</option>
-                    <option value="3">Laravel</option>
-                    <option value="4">Spring</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">Flask</option>
+                  <option value="2">Ruby on Rails</option>
+                  <option value="3">Laravel</option>
+                  <option value="4">Spring</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>3. ¿Qué extensión de archivo se utiliza comúnmente para los archivos de plantilla en HTML?</h3>
+                <h3>
+                  3. ¿Qué extensión de archivo se utiliza comúnmente para los
+                  archivos de plantilla en HTML?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">.html</option>
-                    <option value="2">.py</option>
-                    <option value="3">.tpl</option>
-                    <option value="4">.django</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">.html</option>
+                  <option value="2">.py</option>
+                  <option value="3">.tpl</option>
+                  <option value="4">.django</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>4. ¿Qué comando se utiliza para clonar un repositorio de Git?</h3>
+                <h3>
+                  4. ¿Qué comando se utiliza para clonar un repositorio de Git?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">git clone repository_url</option>
-                    <option value="2">git pull repository_url</option>
-                    <option value="3">git init repository_url</option>
-                    <option value="4">git create repository_url</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">git clone repository_url</option>
+                  <option value="2">git pull repository_url</option>
+                  <option value="3">git init repository_url</option>
+                  <option value="4">git create repository_url</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>5. ¿Qué comando se utiliza para agregar cambios al área de preparación en Git?</h3>
+                <h3>
+                  5. ¿Qué comando se utiliza para agregar cambios al área de
+                  preparación en Git?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">git push</option>
-                    <option value="2">git add</option>
-                    <option value="3">git commit</option>
-                    <option value="4">git merge</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">git push</option>
+                  <option value="2">git add</option>
+                  <option value="3">git commit</option>
+                  <option value="4">git merge</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>6. ¿Qué comando se utiliza para fusionar una rama en Git?</h3>
+                <h3>
+                  6. ¿Qué comando se utiliza para fusionar una rama en Git?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">git push</option>
-                    <option value="2">git pull</option>
-                    <option value="3">git merge</option>
-                    <option value="4">git branch</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">git push</option>
+                  <option value="2">git pull</option>
+                  <option value="3">git merge</option>
+                  <option value="4">git branch</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>7. ¿Qué comando se utiliza para cambiar a una rama diferente en Git?</h3>
+                <h3>
+                  7. ¿Qué comando se utiliza para cambiar a una rama diferente
+                  en Git?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">git switch</option>
-                    <option value="2">git checkout</option>
-                    <option value="3">git branch</option>
-                    <option value="4">git change</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">git switch</option>
+                  <option value="2">git checkout</option>
+                  <option value="3">git branch</option>
+                  <option value="4">git change</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>8. ¿Cuál de los siguientes lenguajes se utiliza para estructurar el contenido de una página web?</h3>
+                <h3>
+                  8. ¿Cuál de los siguientes lenguajes se utiliza para
+                  estructurar el contenido de una página web?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">HTML</option>
-                    <option value="2">CSS</option>
-                    <option value="3">JavaScript</option>
-                    <option value="4">Bootstrap</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">HTML</option>
+                  <option value="2">CSS</option>
+                  <option value="3">JavaScript</option>
+                  <option value="4">Bootstrap</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>9. ¿Qué elemento HTML se utiliza para crear una lista no ordenada?</h3>
+                <h3>
+                  9. ¿Qué elemento HTML se utiliza para crear una lista no
+                  ordenada?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">< ul ></ul></option>
-                    <option value="2">< ol ></ol></option>
-                    <option value="3">< li ></li></option>
-                    <option value="4">< list ></list></option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">< ul ></option>
+                  <option value="2">< ol ></option>
+                  <option value="3">< li ></option>
+                  <option value="4">< list ></option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>10. ¿Qué propiedad CSS se utiliza para cambiar el color del texto?</h3>
+                <h3>
+                  10. ¿Qué propiedad CSS se utiliza para cambiar el color del
+                  texto?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">color</option>
-                    <option value="2">background-color</option>
-                    <option value="3">text-color</option>
-                    <option value="4">font-color</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">color</option>
+                  <option value="2">background-color</option>
+                  <option value="3">text-color</option>
+                  <option value="4">font-color</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>11. ¿Cuál es la clase principal de Bootstrap que se utiliza para crear un contenedor con anchura fija?</h3>
+                <h3>
+                  11. ¿Cuál es la clase principal de Bootstrap que se utiliza
+                  para crear un contenedor con anchura fija?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">container-fluid</option>
-                    <option value="2">container-fixed</option>
-                    <option value="3">container</option>
-                    <option value="4">container-width</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">container-fluid</option>
+                  <option value="2">container-fixed</option>
+                  <option value="3">container</option>
+                  <option value="4">container-width</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>12. ¿Qué elemento HTML se utiliza para incluir JavaScript en una página web?</h3>
+                <h3>
+                  12. ¿Qué elemento HTML se utiliza para incluir JavaScript en
+                  una página web?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">< script ></script></option>
-                    <option value="2">< js ></js></option>
-                    <option value="3">< javascript ></javascript></option>
-                    <option value="4">< code ></option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">< 'script' ></option>
+                  <option value="2">< js ></option>
+                  <option value="3">< javascript ></option>
+                  <option value="4">< code ></option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>13. ¿Cuál es el operador de comparación que se utiliza en JavaScript para comparar si dos valores son iguales en valor y en tipo?</h3>
+                <h3>
+                  13. ¿Cuál es el operador de comparación que se utiliza en
+                  JavaScript para comparar si dos valores son iguales en valor y
+                  en tipo?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">==</option>
-                    <option value="2">=</option>
-                    <option value="3">===</option>
-                    <option value="4">!=</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">==</option>
+                  <option value="2">=</option>
+                  <option value="3">===</option>
+                  <option value="4">!=</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>14. ¿Qué propiedad CSS se utiliza para cambiar el tamaño del texto?</h3>
+                <h3>
+                  14. ¿Qué propiedad CSS se utiliza para cambiar el tamaño del
+                  texto?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">font-size</option>
-                    <option value="2">text-size</option>
-                    <option value="3">size</option>
-                    <option value="4">font-height</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">font-size</option>
+                  <option value="2">text-size</option>
+                  <option value="3">size</option>
+                  <option value="4">font-height</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>15. ¿Qué lenguaje se utiliza para dar estilo a un documento HTML?</h3>
+                <h3>
+                  15. ¿Qué lenguaje se utiliza para dar estilo a un documento
+                  HTML?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">HTML</option>
-                    <option value="2">CSS</option>
-                    <option value="3">JavaScript</option>
-                    <option value="4">Bootstrap</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">HTML</option>
+                  <option value="2">CSS</option>
+                  <option value="3">JavaScript</option>
+                  <option value="4">Bootstrap</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>16. ¿Cuál de las siguientes opciones NO es un tipo de selector CSS?</h3>
+                <h3>
+                  16. ¿Cuál de las siguientes opciones NO es un tipo de selector
+                  CSS?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">Clase</option>
-                    <option value="2">ID</option>
-                    <option value="3">Etiqueta</option>
-                    <option value="4">Atributo</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">Clase</option>
+                  <option value="2">ID</option>
+                  <option value="3">Etiqueta</option>
+                  <option value="4">Atributo</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>17. ¿Qué propiedad CSS se utiliza para cambiar el tamaño de una imagen?</h3>
+                <h3>
+                  17. ¿Qué propiedad CSS se utiliza para cambiar el tamaño de
+                  una imagen?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">width</option>
-                    <option value="2">height</option>
-                    <option value="3">size</option>
-                    <option value="4">image-size</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">width</option>
+                  <option value="2">height</option>
+                  <option value="3">size</option>
+                  <option value="4">image-size</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>18. ¿Qué método se utiliza en JavaScript para seleccionar un elemento HTML por su ID?</h3>
+                <h3>
+                  18. ¿Qué método se utiliza en JavaScript para seleccionar un
+                  elemento HTML por su ID?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">selectById()</option>
-                    <option value="2">getElementById()</option>
-                    <option value="3">querySelector()</option>
-                    <option value="4">findByID()</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">selectById()</option>
+                  <option value="2">getElementById()</option>
+                  <option value="3">querySelector()</option>
+                  <option value="4">findByID()</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>19. ¿Qué método se utiliza en JavaScript para agregar un nuevo elemento al final de un elemento HTML?</h3>
+                <h3>
+                  19. ¿Qué método se utiliza en JavaScript para agregar un nuevo
+                  elemento al final de un elemento HTML?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">appendChild()</option>
-                    <option value="2">addElement()</option>
-                    <option value="3">createElement()</option>
-                    <option value="4">insertAfter()</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">appendChild()</option>
+                  <option value="2">addElement()</option>
+                  <option value="3">createElement()</option>
+                  <option value="4">insertAfter()</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="containerQuestions">
               <div>
-                <h3>20. ¿Qué evento se utiliza en JavaScript para ejecutar una función cuando el usuario hace clic en un elemento HTML?</h3>
+                <h3>
+                  20. ¿Qué evento se utiliza en JavaScript para ejecutar una
+                  función cuando el usuario hace clic en un elemento HTML?
+                </h3>
               </div>
-              <br>
+              <br />
               <div id="answer">
                 <label for="answer">Respuesta: </label>
                 <select name="answer" required>
-                    <option value=""selected>Seleccione</option>
-                    <option value="1">onhover</option>
-                    <option value="2">onclick</option>
-                    <option value="3">onsubmit</option>
-                    <option value="4">onmouseover</option>
+                  <option value="" selected>Seleccione</option>
+                  <option value="1">onhover</option>
+                  <option value="2">onclick</option>
+                  <option value="3">onsubmit</option>
+                  <option value="4">onmouseover</option>
                 </select>
               </div>
             </div>
           </li>
-          <br>
+          <br />
           <li>
             <div class="terms">
               <div>
-                <input type="checkbox" name="terms" required>
-                <label for="consent">Estoy de acuerdo con los <a href="#" target="_blank">terminos y condiciones</a> y la <a href="#">política de privacidad.</a><span class="forminator-required">*</span></label>
+                <input type="checkbox" name="terms" required />
+                <label for="consent"
+                  >Estoy de acuerdo con los
+                  <a href="#" target="_blank">terminos y condiciones</a> y la
+                  <a href="#">política de privacidad.</a
+                  ><span class="forminator-required">*</span></label
+                >
               </div>
-              <br>
+              <br />
               <div>
                 <button class="submit">Enviar respuestas</button>
               </div>
-              <br>            
-            </div>              
+              <br />
+            </div>
           </li>
-        </ul>        
+        </ul>
       </form>
-      <br>
-      
+      <br />
     </main>
     <footer class="footer__container">
       <!-- <img src="./img/logo-blanco.png" alt="Footer Logo" class="footer__logo" /> -->
@@ -529,11 +623,6 @@
           <li class="navigation__item">
             <a href="./autoevaluacion.html" class="navigation__item__link"
               >Autoevaluación</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="./contacto.html" class="navigation__item__link"
-              >Contacto</a
             >
           </li>
         </ul>
