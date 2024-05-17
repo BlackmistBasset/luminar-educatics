@@ -1,0 +1,74 @@
+/* L E A R N I N G - P A T H S */
+
+#introsegment {
+  background-image: url("../img/bg-learnpath.jpg");
+  background-size: cover;
+  background-position: center;
+  /* GENERA UNA SOMBRA INTERNA EN LA SECCION DEL BANNER */
+  box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+}
+
+.i-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: calc(100% + var(--gutter) * 2);
+  margin-left: calc(var(--gutter) * -1);
+}
+
+@media (min-width: 970px) {
+  .i-flex {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* S E L E C T O R P O R E T I Q U E T A */
+h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.intro-container {
+  max-width: var(--container-width);
+  padding: 40px 20px;
+}
+
+@media (min-width: 970px) {
+  .intro-container {
+    padding: 100px 40px;
+  }
+}
+
+.intro-desc {
+  color: #fff;
+  font-size: 1rem;
+  padding-block: 35px;
+}
+
+.intro-img {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+}
