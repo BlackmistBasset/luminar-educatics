@@ -188,3 +188,184 @@ body {
   font-size: 0.8rem;
   text-align: center;
 }
+
+/* Form styles */
+
+
+#form {
+
+  margin-bottom: 20px;
+
+  background-color: var(--light-grey);
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.form-control {
+
+  margin-bottom: 20px;
+
+}
+
+
+.form-control label {
+
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-weight: bold;
+
+  color: var(--dark-grey);
+
+}
+
+
+.form-control input[type="text"],
+
+.form-control input[type="email"],
+
+.form-control input[type="url"] {
+
+  width: 100%;
+
+  padding: 10px;
+
+  border: 1px solid var(--dark-grey);
+
+  border-radius: 5px;
+
+}
+
+
+.form-control input[type="text"]:focus,
+
+.form-control input[type="email"]:focus,
+
+.form-control input[type="url"]:focus {
+
+  border-color: var(--secondary-color);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.btn-cac {
+
+  background-color: var(--secondary-color);
+
+  color: #fff;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+
+.btn-cac:hover {
+
+  background-color: var(--main-color);
+
+}
+
+
+/* Table styles */
+
+
+#list {
+
+  margin-top: 20px;
+
+}
+
+
+.table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  border: 1px solid var(--dark-grey);
+
+}
+
+
+.table th, .table td {
+
+  border: 1px solid var(--dark-grey);
+
+  padding: 10px;
+
+  text-align: left;
+
+}
+
+
+.table th {
+
+  background-color: var(--light-grey);
+
+  font-weight: bold;
+
+  color: var(--dark-grey);
+
+}
+
+
+.table td {
+
+  vertical-align: middle;
+
+}
+
+
+/* Other styles */
+
+
+.search-title {
+
+  font-size: 24px;
+
+  margin-bottom: 10px;
+
+  font-weight: bold;
+
+  color: var(--dark-grey);
+
+}
+
+
+.description {
+
+  font-size: 16px;
+
+  color: var(--dark-grey);
+
+  margin-bottom: 20px;
+
+}
+
+
+.subtitle {
+
+  font-size: 18px;
+
+  margin-bottom: 10px;
+
+  font-weight: bold;
+
+  color: var(--dark-grey);
+
+}
