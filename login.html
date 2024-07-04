@@ -42,97 +42,98 @@
           </li>
         </ul>
       </nav>
-      <a href="javascript:void(0);" class="burguer__menu"></a>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </header>
-    <main>
-      
-      <section id="form" class="container">
-    
-        <h2 class="search-title">Gestión de Alumnos</h2>
-    
-        <p class="description">En esta sección se podrá llevar a cabo la gestión de los alumnos del portal</p>
-    
-        <form action="#" id="form-alumno">
-    
-          <div class="d-flex">
-    
-            <div class="form-control d-flex-column">
-    
-              <label for="nombre">Nombre</label>
-    
-              <input type="text" class="input-search" name="nombre" id="nombre">
-    
-            </div>
-    
-            <div class="form-control d-flex-column">
-    
-              <label for="apellido">Apellido</label>
-    
-              <input type="text" class="input-search" name="apellido" id="apellido">
-    
-            </div>
-    
-            <div class="form-control d-flex-column">
-    
-              <label for="email">Email</label>
-    
-              <input type="email" class="input-search" name="email" id="email">
-    
-            </div>
-    
-            <div class="form-control d-flex-column">
-    
-              <label for="foto">Foto (URL)</label>
-    
-              <input type="url" class="input-search" name="foto" id="foto-form">
-    
-            </div>
-    
-            <input type="hidden" name="id_alumno" id="id-alumno">
-    
-            <button class="btn-cac" type="button" id="btn-save-alumno">Agregar</button>
-    
-          </div>
-    
-        </form>
-    
+    <main> 
+
+      <section id="form" class="container ">
+
+          <h2 class="search-title">Gestión de Alumnos</h2>
+
+          <p class="description" >En esta sección se podra llevar a cabo la gestión de los alumnos del portal</p>
+
+          <form action="#"  id="form-alumno">
+
+              <div class="d-flex">
+
+                  <div class="form-control d-flex-column">
+
+                      <label for="nombre">Nombre</label>
+
+                      <input type="text" class="input-search" name="nombre" id="nombre">
+
+                  </div>
+
+                  <div class="form-control d-flex-column">
+
+                      <label for="apellido">Apellido</label>
+
+                      <input type="text" class="input-search" name="apellido" id="apellido">
+
+                  </div>                    
+
+                  <div class="form-control d-flex-column">
+
+                      <label for="email">Email</label>
+
+                      <input type="email" class="input-search" name="email" id="email">
+
+                  </div>
+
+                  <div class="form-control d-flex-column">
+
+                      <label for="foto">Foto URL</label>
+
+                      <input type="url" class="input-search" name="foto" id="foto">
+
+                  </div>                
+
+                  <input type="hidden"  name="id_alumno" id="id-alumno">
+
+                  <button class="btn-cac" type="button" id="btn-save-alumno">Agregar</button>
+
+              </div>
+
+          </form> 
+
       </section>
-    
+
       <section id="list" class="container">
-    
-        <h3 class="subtitle">Listado de Alumnos</h3>
-    
-        <table id="list-table-alumnos" class="table">
-    
-          <thead>
-    
-            <tr>
-    
-              <th>Nombre</th>
-    
-              <th>Apellido</th>
-    
-              <th>Email</th>
-    
-              <th>Foto</th>
-    
-              <th>Acciones</th>
-    
-            </tr>
-    
-          </thead>
-    
-          <tbody id="tbody-table-alumnos">
-    
-            
-    
-          </tbody>
-    
-        </table>
-    
-      </section>
-    
-    </main>
+
+          <h3 class="subtitle">Listado de Alumnos</h3>
+
+          <table id="list-table-alumnos" class="table">
+
+              <thead>
+
+                  <tr>
+
+                      <th>Nombre</th>
+
+                      <th>Apellido</th>
+
+                      <th>Email</th>
+
+                      <th>Foto</th>
+
+                      <th>Acciones</th>
+
+                  </tr>
+
+              </thead>
+
+              <tbody id="tbody-table-alumnos">
+
+                  
+
+              </tbody>
+
+          </table>
+
+      </section>  
+      <script src="/js/crud-alumnos-fetch.js"></script>
+
+  </main>
     <footer class="footer__container">
       <!-- <img src="./img/logo-blanco.png" alt="Footer Logo" class="footer__logo" /> -->
       <nav class="footer__navbar">
@@ -162,8 +163,5 @@
         <a href="#" class="footer__legend__link">Política de privacidad</a>
       </p>
     </footer>
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/crud-alumnos-fetch.js"></script>
-  </body>
+    </body>
 </html>
